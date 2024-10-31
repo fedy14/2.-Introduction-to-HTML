@@ -1,0 +1,528 @@
+﻿1
+00:00:00,460 --> 00:00:00,870
+All right.
+
+2
+00:00:00,870 --> 00:00:08,010
+So let's talk about the anatomy of NHT M-L tag and break it down to its component parts so that we can
+
+3
+00:00:08,010 --> 00:00:12,170
+actually understand how they're structured and how we can use them.
+
+4
+00:00:12,180 --> 00:00:15,330
+So we've written 20:00 elements like so.
+
+5
+00:00:15,500 --> 00:00:23,410
+So here we have the words hello world and they're enclosed by an opening tag and a closing tag.
+
+6
+00:00:23,760 --> 00:00:29,680
+And in between those tags is the content that we want to apply that structure to.
+
+7
+00:00:29,910 --> 00:00:35,790
+So if you think back to the days of marking down a manuscript it's exactly the same as putting down
+
+8
+00:00:35,820 --> 00:00:43,220
+a quickly line underneath certain words or phrases and asking the publisher to make it bolded to affect
+
+9
+00:00:43,230 --> 00:00:45,870
+the structure of certain parts of the text.
+
+10
+00:00:45,870 --> 00:00:53,010
+Now in this case the publisher just happens to be our browser so these tags make requests to the browser
+
+11
+00:00:53,520 --> 00:01:00,570
+asking it to structure and display our plain text in the way that the web designer wanted it to be shown.
+
+12
+00:01:00,570 --> 00:01:06,410
+Now the other type of tag that we just saw are tags that don't have a closing tag.
+
+13
+00:01:06,520 --> 00:01:08,980
+They're expressed simply like so.
+
+14
+00:01:09,060 --> 00:01:12,140
+And these are called self-closing tags.
+
+15
+00:01:12,330 --> 00:01:14,560
+And we've seen that with the brake tag.
+
+16
+00:01:14,610 --> 00:01:18,080
+And there's a few more others that work like this also.
+
+17
+00:01:18,270 --> 00:01:21,910
+Now how do we find out if something requires a closing tag.
+
+18
+00:01:22,080 --> 00:01:23,800
+Or is self-closing.
+
+19
+00:01:24,060 --> 00:01:27,570
+Well this is where we head to the documentation again.
+
+20
+00:01:27,990 --> 00:01:33,960
+So if we have a look at the documentation for the heading elements you can see that there's this part
+
+21
+00:01:34,380 --> 00:01:42,870
+in the table that says Tag a mission and it says that both the starting and ending tags are mandatory
+
+22
+00:01:42,960 --> 00:01:50,120
+so that you can specify which portion of your text you want to apply this structure to.
+
+23
+00:01:50,130 --> 00:01:53,920
+Now we have a look at the B or the line break element.
+
+24
+00:01:54,000 --> 00:01:56,720
+You can see that under Tiga mission.
+
+25
+00:01:56,820 --> 00:02:02,180
+It says that it must have a start tag and must not have an end tag.
+
+26
+00:02:02,340 --> 00:02:05,740
+So this is how we find out how we write our tanks.
+
+27
+00:02:05,820 --> 00:02:13,890
+Now while we here I want to introduce you to another element called the horizontal rule or the H R tag.
+
+28
+00:02:14,250 --> 00:02:20,340
+And this will allow us to create these horizontal lines above and below our portion of text.
+
+29
+00:02:20,340 --> 00:02:26,640
+So as you can see in the documentation under tagon mission it also says that it must not have an end
+
+30
+00:02:26,640 --> 00:02:27,280
+tag.
+
+31
+00:02:27,300 --> 00:02:31,210
+So this is also a self-closing tag.
+
+32
+00:02:31,510 --> 00:02:37,540
+So let's head back over to our pen so that we can add these two horizontal rules above and below all
+
+33
+00:02:37,540 --> 00:02:38,300
+text.
+
+34
+00:02:38,350 --> 00:02:40,190
+So the first one is going to go here
+
+35
+00:02:42,840 --> 00:02:49,740
+and the last one is going to go here so you can see that our Web page now has two horizontal lines above
+
+36
+00:02:49,800 --> 00:02:52,430
+and below our main portion of text.
+
+37
+00:02:52,440 --> 00:02:58,890
+Now if we have a closer look at this Web site you can see that there are horizontal rule is a little
+
+38
+00:02:58,890 --> 00:03:01,380
+bit thicker than ours.
+
+39
+00:03:01,710 --> 00:03:05,480
+So how can we make ours look more like theirs.
+
+40
+00:03:05,490 --> 00:03:10,560
+Now this is part where I show you a neat trick on any web page that you open in Chrome.
+
+41
+00:03:10,620 --> 00:03:18,240
+You can simply right click on the element that you're interested in and click inspect in order to look
+
+42
+00:03:18,330 --> 00:03:25,200
+at the HMO and CSSA code that's being rendered in the background by the browser so you can see here
+
+43
+00:03:25,230 --> 00:03:27,160
+they've got an H.R. element.
+
+44
+00:03:27,240 --> 00:03:28,460
+Horizontal rule.
+
+45
+00:03:28,620 --> 00:03:32,750
+But they've got Also all of this going on afterwards.
+
+46
+00:03:32,760 --> 00:03:35,610
+So what exactly is that.
+
+47
+00:03:35,610 --> 00:03:43,680
+Now we know that the first part of the tag is the HTL element and it's B.
+
+48
+00:03:43,820 --> 00:03:46,560
+Shaw whatever it is that you want to use.
+
+49
+00:03:46,560 --> 00:03:52,230
+Now the second part inside the angle bracket or inside or tag is new.
+
+50
+00:03:52,410 --> 00:04:01,290
+And this is called an HMO attribute and it basically gives more information to the browser to specify
+
+51
+00:04:01,320 --> 00:04:04,810
+modifications to that HDMI element.
+
+52
+00:04:05,070 --> 00:04:11,560
+So in this case we're saying that we want a horizontal rule but we wanted in size 3.
+
+53
+00:04:11,580 --> 00:04:18,060
+Now what is size 3 mean and how do we know that we have these attributes available to us.
+
+54
+00:04:18,060 --> 00:04:21,390
+You've guessed that we're going back to the documentation.
+
+55
+00:04:21,840 --> 00:04:27,690
+Now I know we're making a big deal about going to the documentation but it really really is an important
+
+56
+00:04:27,690 --> 00:04:34,440
+skill understanding and being able to look up the documentation being familiar with the structure of
+
+57
+00:04:34,440 --> 00:04:36,220
+it and where to look.
+
+58
+00:04:36,300 --> 00:04:41,170
+In order to find out how to implement or do certain things.
+
+59
+00:04:41,460 --> 00:04:46,920
+So if we have a look at our documentation for each other you can see that there's this section called
+
+60
+00:04:47,040 --> 00:04:50,590
+attributes and that's what we spoke about just now.
+
+61
+00:04:50,910 --> 00:04:59,580
+The attribute comes after the attribute comes after the main HDMI element from and is separated from
+
+62
+00:04:59,580 --> 00:05:01,830
+the element by a single space.
+
+63
+00:05:01,830 --> 00:05:08,700
+In this case the horizontal rule element has actually quite a few attributes including a line so you
+
+64
+00:05:08,700 --> 00:05:15,330
+can specify whether if you want your hars onto line to align to the left or line to the right or be
+
+65
+00:05:15,330 --> 00:05:19,820
+centered you can specify the color of the horizontal rule.
+
+66
+00:05:19,830 --> 00:05:26,580
+You can set weather if you want the horizontal rules have shading or not and you can also set the height
+
+67
+00:05:26,850 --> 00:05:32,910
+in pixels of that horizontal rule which is what we saw earlier on over here.
+
+68
+00:05:33,180 --> 00:05:40,140
+So in this case the reason why they're horizontal rule looks different to ours is because ours is by
+
+69
+00:05:40,140 --> 00:05:49,110
+default only one pixel high or one pixel in size whereas there's if you inspect in the HD M-L is 3 pixels
+
+70
+00:05:49,140 --> 00:05:56,310
+in height and they've also specified no shade i.e. no shading to the horizontal rule.
+
+71
+00:05:56,310 --> 00:06:03,570
+So if we want to make our website a seamless copy of what we see here then we also have to specify those
+
+72
+00:06:03,660 --> 00:06:04,770
+attributes.
+
+73
+00:06:04,770 --> 00:06:08,700
+So if you remember the horizontal rule is a self-closing tag.
+
+74
+00:06:09,000 --> 00:06:14,970
+And so inside the tie we're going to make a space and then we're going to specify the name of the attribute
+
+75
+00:06:15,300 --> 00:06:19,680
+which we know from the documentation to be called the size attribute.
+
+76
+00:06:19,680 --> 00:06:25,380
+And we're going to set it to equal three pixels and then we're going to specify that it is no shade
+
+77
+00:06:25,480 --> 00:06:26,890
+i.e. no shading.
+
+78
+00:06:27,030 --> 00:06:30,250
+And we know all of this from the documentation.
+
+79
+00:06:30,270 --> 00:06:36,450
+So now once our code updates you can see that this brand new hars onto a rule looks completely different
+
+80
+00:06:36,450 --> 00:06:38,120
+from what it was before.
+
+81
+00:06:38,250 --> 00:06:45,180
+And we can copy this over to the top as well so that all horizontal rules look exactly the same as what
+
+82
+00:06:45,180 --> 00:06:46,710
+we've got over here.
+
+83
+00:06:46,710 --> 00:06:53,250
+So now we've seen HDMI elements that require an opening tag as well as a closing tag.
+
+84
+00:06:53,250 --> 00:06:57,490
+We've also seen T.M. elements that have a self-closing tag.
+
+85
+00:06:57,570 --> 00:07:04,470
+And finally we've seen that HDMI elements can also have an attribute where you can specify modifications
+
+86
+00:07:04,770 --> 00:07:06,570
+to the default element.
+
+87
+00:07:06,570 --> 00:07:14,610
+Now all we need is just to add one final tag code center to or a simple file and we would have now faithfully
+
+88
+00:07:14,610 --> 00:07:17,490
+copied what this Web site looks like.
+
+89
+00:07:17,490 --> 00:07:24,410
+So you can have a look through the eight CML by remember right clicking and inspecting in Chrome.
+
+90
+00:07:24,540 --> 00:07:29,400
+And you can look through to see how they've structured the rest of the document as well.
+
+91
+00:07:29,400 --> 00:07:31,290
+Now this is a good point to mention.
+
+92
+00:07:31,290 --> 00:07:38,350
+Our first challenge so we've got this code pen now where we've been messing around with the HMO.
+
+93
+00:07:38,430 --> 00:07:43,750
+Now you can either save this anonymously or you can create a free encode pen in order to be able to
+
+94
+00:07:43,750 --> 00:07:45,600
+access this later on.
+
+95
+00:07:45,730 --> 00:07:53,130
+But I want you to create a brand new pen and this pen is going to be our code playbook and you're going
+
+96
+00:07:53,130 --> 00:07:57,200
+to use this document as an interactive notebook if you will.
+
+97
+00:07:57,250 --> 00:08:04,480
+And I want you to document here all the new things that you've learnt as we progress through the course.
+
+98
+00:08:04,510 --> 00:08:09,750
+So for example in this and the last lesson we learn about the H1 tag.
+
+99
+00:08:09,820 --> 00:08:16,660
+So in our code playbook the first thing that's going to go in is your H-1 tag and you can say that this
+
+100
+00:08:16,660 --> 00:08:27,550
+is a level one heading created using the H1 tag we can go ahead and close it off and you can look through
+
+101
+00:08:27,550 --> 00:08:34,320
+the documentation to perhaps copy some of these code snippets over but make sure that whenever you're
+
+102
+00:08:34,330 --> 00:08:41,410
+copying pasting code that you understand what it is that you've copied over you understand what the
+
+103
+00:08:41,410 --> 00:08:42,760
+code does.
+
+104
+00:08:42,760 --> 00:08:48,130
+There's nothing worse than copying and pasting code that breaks your Web site because you don't understand
+
+105
+00:08:48,220 --> 00:08:53,920
+what you've put in there so we can go ahead and then modify each of these so that when we're creating
+
+106
+00:08:53,920 --> 00:08:59,770
+our own Web sites and we want to come back to our playbook and have it as a point of reference then
+
+107
+00:08:59,770 --> 00:09:05,830
+we'll be able to see easily at a glance all of the elements that we've used and that we've learnt about
+
+108
+00:09:05,830 --> 00:09:06,380
+before.
+
+109
+00:09:06,460 --> 00:09:14,530
+So my challenge to you is to create your very own code playbook and to start keeping notes on all the
+
+110
+00:09:14,530 --> 00:09:16,760
+things that you're learning in this course.
+
+111
+00:09:16,780 --> 00:09:23,630
+Now sometimes with certain elements for example the line break you don't have to put any text inside
+
+112
+00:09:23,630 --> 00:09:28,240
+a line break in the same way that we've done so for the H-1 tag.
+
+113
+00:09:28,240 --> 00:09:31,850
+So this is a point where you can use a comment instead.
+
+114
+00:09:31,870 --> 00:09:40,860
+In your aged him l file so comments are portions of tags which are marked out to be ignored by the browser.
+
+115
+00:09:41,380 --> 00:09:46,900
+And they usually places where you write notes to yourself or notes to fellow programmers who might be
+
+116
+00:09:46,900 --> 00:09:48,750
+looking at your code.
+
+117
+00:09:48,970 --> 00:09:58,030
+So NHT M-L we create a comment by using the angle Bacchante a exclamation mark two dashes and then to
+
+118
+00:09:58,030 --> 00:09:59,240
+close off the comment.
+
+119
+00:09:59,290 --> 00:10:07,140
+We use another two dashes and a closing angle bracket and everything in between here is a common.
+
+120
+00:10:07,420 --> 00:10:13,630
+You can see that usually it gets highlighted in a different color and none of it gets interpreted into
+
+121
+00:10:13,630 --> 00:10:14,770
+the web page.
+
+122
+00:10:14,800 --> 00:10:18,500
+So this is where you can put sections for your notes.
+
+123
+00:10:18,550 --> 00:10:20,930
+For example self-closing tags.
+
+124
+00:10:20,950 --> 00:10:27,040
+You can make it into several paragraphs just by putting the closing tag at the bottom and you can write
+
+125
+00:10:27,040 --> 00:10:32,690
+notes on the elements as we come across them and keep this for your own reference.
+
+126
+00:10:32,770 --> 00:10:38,620
+By the time when you're ready to create your own web site it will be a goldmine of a resource to jog
+
+127
+00:10:38,620 --> 00:10:41,360
+your memory on all of the lessons that you've learned.
+
+128
+00:10:41,620 --> 00:10:47,710
+So in the next lesson we're going to be building our very first web site and it's going to be really
+
+129
+00:10:47,710 --> 00:10:52,510
+really awesome because we're going to be using a real text editor and we're going to be putting that
+
+130
+00:10:52,510 --> 00:10:54,850
+Web site live onto the Internet.
+
+131
+00:10:54,850 --> 00:10:57,850
+So there's all of that and more yet to come.
+
+132
+00:10:57,850 --> 00:10:59,950
+So I will see you on the next lesson.
+

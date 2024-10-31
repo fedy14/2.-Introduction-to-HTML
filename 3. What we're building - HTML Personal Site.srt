@@ -1,0 +1,168 @@
+﻿1
+00:00:00,840 --> 00:00:01,160
+Right.
+
+2
+00:00:01,290 --> 00:00:07,410
+So in this lesson we're going to be building our very first web site now because we've only talked about
+
+3
+00:00:07,470 --> 00:00:14,130
+HDMI also for how to structure Web sites using Timah elements and we haven't yet gotten to the part
+
+4
+00:00:14,130 --> 00:00:19,710
+where we've learnt about styling using CSSA then we're kind of limited in terms of the kind of Web sites
+
+5
+00:00:19,710 --> 00:00:20,650
+that we can make.
+
+6
+00:00:21,000 --> 00:00:27,180
+But Finot our Web sites are going to be right up there with the Internet Titans but just way back in
+
+7
+00:00:27,180 --> 00:00:28,590
+1997.
+
+8
+00:00:28,680 --> 00:00:31,670
+So do you remember what Yahoo looked like when it first launched.
+
+9
+00:00:31,680 --> 00:00:34,830
+Or do you remember what Google looked like when it first came out.
+
+10
+00:00:34,830 --> 00:00:36,000
+No I don't remember.
+
+11
+00:00:36,090 --> 00:00:37,270
+Well it was a great Web site.
+
+12
+00:00:37,280 --> 00:00:38,900
+I can show you exactly that.
+
+13
+00:00:38,970 --> 00:00:45,270
+And it's called The Internet Archive Wayback Machine and you can find it at web dot archive dot org.
+
+14
+00:00:45,270 --> 00:00:52,240
+Now in here you just enter the realm of a Web site that you were interested in say Yahoo dot com.
+
+15
+00:00:52,540 --> 00:00:59,280
+Then it shows you what this Web site looks like all the way from 1996 to current day which is 2017.
+
+16
+00:00:59,280 --> 00:01:04,870
+Now let's have a look at what Yahoo looked like originally on the first day it was crowed.
+
+17
+00:01:04,890 --> 00:01:09,110
+So 17th of October 1996.
+
+18
+00:01:09,120 --> 00:01:12,240
+So let's go ahead and click on that snapshot.
+
+19
+00:01:12,240 --> 00:01:14,870
+And this is exactly what it looks like.
+
+20
+00:01:14,870 --> 00:01:22,260
+So if we close off this frame you can see it's almost like as if you've time traveled back to 1996 when
+
+21
+00:01:22,260 --> 00:01:26,450
+Yahoo first launched and you were visiting this Web site for the first time.
+
+22
+00:01:26,490 --> 00:01:31,200
+Now as you can see most of this is just pure HMO.
+
+23
+00:01:31,200 --> 00:01:36,010
+It's a lot of structure and a lot of formatting but it looks really ugly.
+
+24
+00:01:36,090 --> 00:01:39,330
+But it's OK because it's a great place to get started with.
+
+25
+00:01:39,450 --> 00:01:44,610
+So this is the sort of web site that we're going to be building by the end of this module.
+
+26
+00:01:44,640 --> 00:01:47,410
+Now I hate to say Oh but this looks terrible.
+
+27
+00:01:47,460 --> 00:01:48,690
+We're in 2017.
+
+28
+00:01:48,700 --> 00:01:51,090
+Surely nobody builds web sites like this anymore.
+
+29
+00:01:51,360 --> 00:01:56,970
+Well this is an interesting anecdote that you might not know if you have a look at some of the world's
+
+30
+00:01:57,030 --> 00:02:02,540
+top computer science professors and you look at their personal pages that they've built.
+
+31
+00:02:02,640 --> 00:02:09,690
+They all look a little bit like this not so dissimilar from the Web sites in 1996.
+
+32
+00:02:09,690 --> 00:02:14,730
+So this is Thomas Coleman who's a serious algorithm guy and this is a Web site of John Kleinberg.
+
+33
+00:02:14,760 --> 00:02:18,930
+Another huge name computer science professor and of course the king himself.
+
+34
+00:02:18,950 --> 00:02:22,110
+Donald Earth has a website that looks like this.
+
+35
+00:02:22,110 --> 00:02:27,180
+So if it's good enough for these computer science Titans then it's probably good enough also for our
+
+36
+00:02:27,180 --> 00:02:28,490
+very first web site.
+
+37
+00:02:28,580 --> 00:02:33,750
+So by the end of this module we're going to build a website that looks much like this something that
+
+38
+00:02:33,750 --> 00:02:36,410
+we can put up online to show what we've done.
+
+39
+00:02:36,460 --> 00:02:39,670
+OCV as well as our hobbies and things that we like to do.
+
+40
+00:02:39,690 --> 00:02:44,300
+So you can use it as a personal site or somewhere to list your CV online.
+
+41
+00:02:44,400 --> 00:02:51,570
+So I hope you're excited because I'm super excited and once you're ready let's go ahead and create our
+
+42
+00:02:51,570 --> 00:02:52,820
+very first web site.
+
